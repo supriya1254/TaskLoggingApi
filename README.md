@@ -24,11 +24,11 @@ The following commands will build and run the unit test:
 mvn verify
 ```
 
-### Deploy:
+### Deploy
 
 in the project root issue:
 ```BAT
-mvn install
+mvn clean install
 ```
 
 ### IntelliJ Configuration
