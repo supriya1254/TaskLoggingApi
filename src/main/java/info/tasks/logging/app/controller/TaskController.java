@@ -22,27 +22,27 @@ public class TaskController {
   @Autowired
   private TaskService taskService;
 
-    @GetMapping("/")
+    @GetMapping("/getTask")
     public List<Task> getTasks() {
       return taskService.getTasks();
     }
 
-    @GetMapping("/{taskId}")
+    @GetMapping("/getTask/{taskId}")
     public Task getTaskById(@PathVariable Long taskId) {
       return taskService.getTaskById(taskId);
     }
 
-    @PostMapping("/")
+    @PostMapping("/createTask")
     public Task createTask(@RequestBody Task Task) {
       return taskService.createTask(Task);
     }
 
-    @PutMapping("/")
+    @PutMapping("/editTask")
     public Task updateTask(@RequestBody Task task) {
       return taskService.updateTask(task);
     }
 
-    @DeleteMapping("/{taskId}")
+    @DeleteMapping("/deleteTask/{taskId}")
     public Long deleteTask(@PathVariable Long taskId) {
       return taskService.deleteTask(taskId);
     }
