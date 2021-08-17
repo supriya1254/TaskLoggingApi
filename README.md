@@ -37,7 +37,7 @@ To run different profiles without IntelliJ Ultimate, use the following command
 mvn verify spring-boot:run -Dspring-boot.run.profiles={profile name}
 ```
 
-### These are API's
+### These are the API's
 
 - Create task : /api/createTask
 - Edit task : /api/editTask
