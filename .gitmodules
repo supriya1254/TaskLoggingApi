@@ -1,6 +1,0 @@
-[submodule "react-frontend"]
-	path = react-frontend
-	url = https://github.com/supriya1254/TaskLoggingApi.gitgit
-[submodule "Frontend-app"]
-	path = Frontend-app
-	url = https://github.com/supriya1254/Frontend-app.git
