@@ -1,5 +1,6 @@
 package info.tasks.logging.app.configuration;
 
+import java.util.Collections;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import springfox.documentation.builders.ApiInfoBuilder;
@@ -26,10 +27,15 @@ public class SwaggerConfig {
   }
 
   private ApiInfo apiInfo() {
-    return new ApiInfoBuilder()
-      .title("Task Logging API")
-      .description("\"Swagger configuration for application \"")
-      .build();
+    return new ApiInfo(
+      "Api Documentation",
+      "This api is responsible for the task status.",
+      "1.0",
+      "Free to use",
+      new springfox.documentation.service.Contact("Supriya Soni", "https://github.com/supriya1254/TaskLoggingApi","test@gmail.com"),
+      "API License",
+      "https://github.com/supriya1254/TaskLoggingApi",
+      Collections.emptyList());
   }
 
 }
